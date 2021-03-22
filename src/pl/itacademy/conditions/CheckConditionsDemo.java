@@ -19,7 +19,7 @@ public class CheckConditionsDemo {
         //Be careful! Only first line of code belongs to this IF!
         if (number > 10)
             System.out.println("Condition is TRUE");
-            System.out.println("Second line of IF statement also been executed!");
+            System.out.println("This line out of IF statement and always been executed!");
 
 
         String browser = "Internet Explorer 5.0";
