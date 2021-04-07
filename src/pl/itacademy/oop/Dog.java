@@ -2,6 +2,11 @@ package pl.itacademy.oop;
 
 public class Dog extends Animal {
 
+    public Dog(String name) {
+        super(name);
+        System.out.println("Dog initialization");
+    }
+
     @Override
     protected void breathe() {
         System.out.println("Dog is breathing");
@@ -13,7 +18,17 @@ public class Dog extends Animal {
     }
 
     @Override
+    protected void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+
+    @Override
     protected void sleep() {
-        System.out.println("Dog is sleeping");
+        super.sleep();
+        System.out.println("Dog is animal, so it is sleeping too!");
+    }
+
+    public String getName() {
+        return name;
     }
 }
