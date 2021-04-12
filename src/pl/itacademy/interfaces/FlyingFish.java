@@ -14,6 +14,11 @@ public class FlyingFish extends Animal implements Flyable, Swimmable {
     }
 
     @Override
+    public void doSomething() {
+        System.out.println("Diamond problem has been solved!");
+    }
+
+    @Override
     protected void breathe() {
 
     }
