@@ -19,4 +19,11 @@ public class Cat extends Animal {
     protected void makeSound() {
         System.out.println("Meu!");
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                "} ";
+    }
 }
